@@ -1,0 +1,6 @@
+procs:
+  server:
+    shell: cargo watch -x run --clear --watch src
+  request session:
+    shell: 'curl http://localhost:8080/api/iot/86007611-034c-4afb-83ed-16e2167d3373/start -H "apiKey: 1414addd-f19a-45e4-962a-f9c764e27031"'
+    autostart: false

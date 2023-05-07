@@ -1,0 +1,23 @@
+[package]
+name = "srv-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+axum = "0.6.18"
+byteorder = "1.4.3"
+clap = { version = "4.2.7", features = ["env", "derive"] }
+dotenvy = "0.15.7"
+futures-util = "0.3.28"
+redis = { version = "0.23.0", features = ["serde", "serde_json", "json"] }
+reqwest = { version = "0.11.17", features = ["json", "serde_json"] }
+rust_socketio = { git = "https://github.com/1c3t3a/rust-socketio.git", features = [
+    "async",
+] }
+serde = { version = "1.0.162", features = ["serde_derive"] }
+serde_json = "1.0.96"
+thiserror = "1.0.40"
+tokio = { version = "1.28.0", features = ["full"] }
